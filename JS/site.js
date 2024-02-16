@@ -25,7 +25,6 @@ cartCloseTopRight.ariaLabel = "Close";
 const cartModalBody = document.createElement("div");
 cartModalBody.className = "modal-body";
 cartModalBody.id = "cartModalBody";
-cartModalBody.innerText = "Empty"; //<---------------------Ändra vid Add / Remove
 
 const cartModalFooter = document.createElement("div");
 cartModalFooter.className = "modal-footer";
@@ -90,6 +89,12 @@ async function populateTableRows() {
     tableConst.children[1]
   );
 
+  // if (cartItems.length < 1) {
+  //   cartModalBody.innerText = "Empty";
+  // } else {
+  //   cartModalBody.innerText = "";
+  // }
+
   let totalCounter = 0;
   let totalUSDCounter = 0;
 
@@ -132,11 +137,12 @@ async function populateTableRows() {
 
     priceInUSD = (usdRate / sekRate) * foundItem.price;
 
+    const totalInUSD = (usdRate / sekRate) * total;
     const priceInUSDRounded = priceInUSD.toFixed(2);
     const totalInUSDRounded = ((usdRate / sekRate) * total).toFixed(2);
 
     totalCounter += total;
-    totalUSDCounter += priceInUSD;
+    totalUSDCounter += totalInUSD;
     console.log(priceInUSD);
 
     const newRecord = document.createElement("tr");
@@ -397,10 +403,10 @@ for (const item of allItems) {
   // divTextAndButtonContainer.appendChild(paragraphDescription);
 
   const divFlexCol = document.createElement("div");
-  divFlexCol.className = "flex col-sm-4 mb-2 ";
+  divFlexCol.className = "col-md-6 mb-2 ";
 
   const divElement = document.createElement("div");
-  divElement.className = "card text-center align-content-center";
+  divElement.className = "card text-center w-80 h-100";
   divElement.style.width = "18rem";
 
   const h5Element = document.createElement("h5");
@@ -413,7 +419,6 @@ for (const item of allItems) {
   imgElement.alt = "...";
   imgElement.src = item.imageSource;
   imgElement.alt = item.imageAlt;
-  imgElement.className = "img-responsive";
 
   const cardBody1 = document.createElement("div");
   cardBody1.className = "card-body";
@@ -427,12 +432,12 @@ for (const item of allItems) {
 
   const addButton = document.createElement("button");
   addButton.type = "button";
-  addButton.className = "btn btn-outline-success border";
+  addButton.className = "btn btn-outline-success border me-1";
   addButton.innerText = "Add";
   addButton.setAttribute("onclick", `addProductToCart('${item.itemName}')`);
 
   const infoButton = document.createElement("button");
-  infoButton.className = "btn btn-outline-primary";
+  infoButton.className = "btn btn-outline-primary ms-1";
   infoButton.innerText = "Info";
   infoButton.setAttribute("data-bs-toggle", "modal");
   infoButton.setAttribute("data-bs-target", `#myLittleModal_${item.itemName}`);
