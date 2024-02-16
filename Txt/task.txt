@@ -1,0 +1,38 @@
+Hemsida.
+BOOTSTRAP SKA ANVÄNDAS
+________________________
+Filer:
+3 HTML 
+3 CSS
+1 site.js med funktionalitet för att:
+- Visa produkter
+- Visa kundvagn
+- Lägga till och ta bort från kundvagn.
+
+Minst 2 TYPSNITT
+Minst 3 FÄRGER (utöver svart och vitt)
+
+_________________________
+3 Delar:
+* Landningssida med:
+    - Företagsnamn
+    - Bild
+    - Välkomsttext
+
+* Om oss-sida med:
+    - Information om företaget
+    - Kontaktuppgifter
+    - Address (med Google Maps-modul)
+
+* Företagets tjänster/produkter som ska:
+    - Listas på ett "snyggt" sätt, med hjälp av Javascript-array
+    - Bild för varje produkt
+    - Kundvagn (enkel variant)
+
+VG:
+* Anropa API för t.ex. väder, valuta etc. som är relevant:
+  https://github.com/public-api-lists/public-api-lists
+* "Modaler" ska användas för att kunna expandera produktinformation
+  i produktlistan.
+* Performance, Accessability och Best Practices ska alla vara över 90%
+  i Lighthouse på Desktop och Mobile.
