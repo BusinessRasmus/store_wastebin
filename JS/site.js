@@ -208,8 +208,8 @@ function removeProductFromCart(a) {
 const allItems = [
   {
     itemName: "Speaker",
-    description: `Really nice speaker <br />
-                Dimensions: 6 x 3 x 2 inches <br />
+    description: `Really nice speaker
+                Dimensions: 6 x 3 x 2 inches
                 Specifications: Wireless connectivity, 10 hours of battery life,
                 waterproof`,
     price: 319,
@@ -219,8 +219,9 @@ const allItems = [
   },
   {
     itemName: "Coffe-cup",
-    description: `Really nice cup <br />Dimensions: 3.5 inches in diameter, <br />
-                4.5 inches in height <br />
+    description: `Really nice cup 
+    Dimensions: 3.5 inches in diameter,
+                4.5 inches in height
                 Specifications: Ceramic material, 12 oz capacity, microwave, and
                 dishwasher safe`,
     price: 79,
@@ -230,8 +231,9 @@ const allItems = [
   },
   {
     itemName: "Lamp",
-    description: `Really nice lamp <br />
-                Dimensions: 10 x 5 x 18 inches <br />Specifications: LED light,
+    description: `Really nice lamp
+                Dimensions: 10 x 5 x 18 inches
+                Specifications: LED light,
                 adjustable arm and brightness levels, USB charging ports`,
     price: 169,
     imageSource: "..\\Images\\desklamp.jpg",
@@ -240,8 +242,10 @@ const allItems = [
   },
   {
     itemName: "Rubber-band",
-    description: `Really nice rubber band <br />Dimensions: 5 feet in length, 2
-                inches in width <br />Specifications: Heavy resistance level,
+    description: `Really nice rubber band 
+    Dimensions: 5 feet in length, 2
+                inches in width 
+                Specifications: Heavy resistance level,
                 durable latex material`,
     price: 99,
     imageSource: "..\\Images\\fitnessBand.jpg",
@@ -250,7 +254,7 @@ const allItems = [
   },
   {
     itemName: "Backpack",
-    description: `Really nice backpack <br />Dimensions: 18 x 12 x 6 inches
+    description: `Really nice backpack Dimensions: 18 x 12 x 6 inches
                 <br />Specifications: Padded laptop compartment (fits up to
                 15-inch laptops), multiple pockets for organization,
                 water-resistant material`,
@@ -261,8 +265,9 @@ const allItems = [
   },
   {
     itemName: "Notebook",
-    description: `Really nice notebook <br />Dimensions: 8.5 x 11 inches
-                <br />Specifications: 100 pages, college-ruled, durable
+    description: `Really nice notebook 
+    Dimensions: 8.5 x 11 inches
+    Specifications: 100 pages, college-ruled, durable
                 cardboard cover`,
     price: 19,
     imageSource: "..\\Images\\notebook.jpg",
